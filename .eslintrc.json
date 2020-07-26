@@ -1,0 +1,35 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard"
+  ],
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "browser": false
+  },
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "globals": {
+    "strapi": true,
+    "fetch": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "no-undef": 0,
+    "eol-last": [
+      "error",
+      "always"
+    ]
+  },
+  "plugins": [
+    "react"
+  ]
+}
